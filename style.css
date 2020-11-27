@@ -9,7 +9,6 @@ body {
   --secondary-color: #deebff;
   --tertiary-color: #f2f2f2;
   margin: 0;
-  /* box-sizing: border-box; */
   padding-top: 20px;
   width: 100%;
   display: flex;
@@ -25,7 +24,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
 .main_content {
   display: flex;
   flex-flow: row wrap;
@@ -380,7 +378,7 @@ footer {
     row-gap: 32px;
   }
   main {
-    margin: 0 3.55%;
+    margin: 0 4%;
   }
   .header_logo {
     padding-left: 52px;
@@ -395,87 +393,85 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;
-    /* order: 1; */
     border-radius: 20px;
     padding: 32px 8px;
   }
-}
-.hosting {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1.5;
-  order: 1;
-  border-radius: 20px;
-  background-color: var(--tertiary-color);
-  padding: 32px 8px;
-}
-.hosting_wrapper {
-  justify-content: space-around;
-  flex-flow: row wrap;
-  column-gap: 16px;
-  row-gap: 16px;
-}
-.hosting_card {
-  width: 45%;
-  box-sizing: border-box;
-}
-.activities_card a {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.activities_card {
-  max-width: none;
-  max-height: none;
-}
-.activities_card_low {
-  height: 54px;
-}
+  .hosting {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1.5;
+    order: 1;
+    border-radius: 20px;
+    background-color: var(--tertiary-color);
+    padding: 32px 8px;
+  }
+  .hosting_wrapper {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+  .hosting_card {
+    width: 45%;
+    box-sizing: border-box;
+  }
+  .activities_card a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .activities_card {
+    max-width: none;
+    max-height: none;
+  }
+  .activities_card_low {
+    height: 54px;
+  }
 
-.hosting_card_title {
-  display: flex;
-  justify-content: flex-start;
-}
-/*grid-area*/
-.port {
-  grid-area: port;
-}
-.fort {
-  grid-area: fort;
-}
-.isle {
-  grid-area: isle;
-}
-.calanque {
-  grid-area: calanque;
-}
-.lady {
-  grid-area: lady;
-}
-.park {
-  grid-area: park;
-}
-.activities_search {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2fr 2fr;
-  column-gap: 16px;
-  grid-template-areas: "port fort calanque lady" "port isle calanque park";
-}
-.test {
-  flex: 1;
-}
+  .hosting_card_title {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /*grid-area*/
+  .port {
+    grid-area: port;
+  }
+  .fort {
+    grid-area: fort;
+  }
+  .isle {
+    grid-area: isle;
+  }
+  .calanque {
+    grid-area: calanque;
+  }
+  .lady {
+    grid-area: lady;
+  }
+  .park {
+    grid-area: park;
+  }
+  .activities_search {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr;
+    column-gap: 16px;
+    grid-template-areas: "port fort calanque lady" "port isle calanque park";
+  }
+  .test {
+    flex: 1;
+  }
 
-/*footer*/
-.footer {
-  padding: 32px 52px;
-  flex-direction: row;
+  /*footer*/
+  .footer {
+    padding: 32px 52px;
+    flex-direction: row;
+  }
+  .footer_column {
+    flex: 1;
+  }
 }
-.footer_column {
-  flex: 1;
-}
-
 /*Laptop(portable)*/
 @media only screen and (min-width: 1024px) {
   body {
@@ -536,7 +532,7 @@ footer {
     border-radius: 0 20px 20px 0;
   }
   .icon {
-    display: none !important;
+    display: none !important; /*sinon le logo reste*/
   }
   .text {
     display: contents;
@@ -552,10 +548,6 @@ footer {
   .activities_search {
     column-gap: 50px;
     row-gap: 25px;
-  }
-  :target {
-    padding-top: 80px;
-    margin-top: -80px;
   }
 }
 /*Desktop*/
