@@ -120,8 +120,6 @@ input::placeholder {
   border-radius: 20px;
   padding: 1% 1%;
   width: 64px;
-  transition: background-position 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-    box-shadow 0.2s linear;
 }
 .search_form_btn:hover {
   transform: scale(1.1);
@@ -152,6 +150,7 @@ input::placeholder {
   align-items: center;
   font-weight: bold;
 }
+/*icônes filtre*/
 .fa_style::before {
   font-weight: 900;
   color: var(--primary-color);
@@ -166,7 +165,6 @@ input::placeholder {
 .filter_filter:hover:before {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  transition: 0.3s ease-in;
 }
 .filter_filter:hover {
   background-color: var(--secondary-color);
@@ -328,7 +326,7 @@ input::placeholder {
   padding: 32px 20px;
 }
 :target {
-  padding-top: 100px;
+  padding-top: 120px;
 } /*sinon le titre de l'element n'apparait pas*/
 .activities_card {
   display: flex;
@@ -457,7 +455,9 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr 2fr;
     column-gap: 16px;
-    grid-template-areas: "port fort calanque lady" "port isle calanque park";
+    grid-template-areas:
+      "port fort calanque lady"
+      "port isle calanque park";
   }
   .test {
     flex: 1;
@@ -520,7 +520,6 @@ footer {
   .header_singup:hover {
     border-top: 3px solid var(--primary-color);
     background-color: var(--secondary-color);
-    background-color: #deebff88;
     border-radius: 0 0 20px 20px;
     padding-bottom: 24px;
   }
