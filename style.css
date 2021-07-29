@@ -218,11 +218,11 @@ input::placeholder {
   height: 200px;
   padding: 4px;
   background-color: #fff;
-  max-width: 490px;
+ // max-width: 490px;
   width: -webkit-fill-available;
 }
 .hosting_card_container {
- // display: flex;
+//  display: flex;
   flex-wrap: wrap;
   height: 100%;
 }
