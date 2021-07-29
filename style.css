@@ -19,6 +19,7 @@ main {
 }
 .price {
   font-weight: bold;
+  font-size:0.8em;
 }
 a {
   text-decoration: none;
@@ -218,9 +219,10 @@ input::placeholder {
   padding: 4px;
   background-color: #fff;
   max-width: 490px;
+  width: -webkit-fill-available;
 }
 .hosting_card_container {
-  display: flex;
+ // display: flex;
   flex-wrap: wrap;
   height: 100%;
 }
@@ -252,6 +254,7 @@ input::placeholder {
 }
 .hosting_card_star {
   padding-left: 8px;
+ 
 }
 .more {
   width: 100%;
@@ -280,8 +283,8 @@ input::placeholder {
   background-color: white;
   padding: 4px;
   margin: 16px 0;
-  max-height: 144px;
-  min-width: 320px;
+//  max-height: 144px;
+//  min-width: 320px;
   max-width: 480px;
 }
 .favorite_card_figure {
@@ -368,6 +371,11 @@ footer {
   font-weight: bold;
 }
 /*Breakspoints*/
+@media screen and (max-width: 400px) {
+  .favorite_card_coment{
+    font-size:smaller;
+  }
+}
 /*tablette*/
 @media screen and (min-width: 768px) {
   .main_content {
@@ -429,6 +437,7 @@ footer {
   .hosting_card_title {
     display: flex;
     justify-content: flex-start;
+    font-size: 1em;
   }
   /*grid-area*/
   .port {
@@ -586,3 +595,4 @@ footer {
     align-items: center;
   }
 }
+
