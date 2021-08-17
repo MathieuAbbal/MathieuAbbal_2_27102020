@@ -326,6 +326,7 @@ input::placeholder {
 .activities {
   order: 3;
   padding: 32px 20px;
+  width:100%;
 }
 :target {
   padding-top: 120px;
@@ -336,13 +337,13 @@ input::placeholder {
   border-radius: 20px;
   box-shadow: 0 0 16px #0000002e;
   margin: 16px 0;
-  max-width: 500px;
-  max-height: 200px;
+//  width:100%;
+ 
 }
 .activities_card_figure {
   display: flex;
   margin: 0px;
-  height: 123px;
+  height: 150px;
 }
 .activities_card_low {
   display: flex;
@@ -427,8 +428,8 @@ footer {
     height: 100%;
   }
   .activities_card {
-    max-width: none;
-    max-height: none;
+  //  max-width: none;
+  //  max-height: none;
   }
   .activities_card_low {
     height: 54px;
