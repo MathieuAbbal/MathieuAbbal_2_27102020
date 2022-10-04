@@ -1,7 +1,6 @@
 ![alt](https://user-images.githubusercontent.com/72860893/100263609-01dac080-2f4e-11eb-9f1a-28bbdf3ebf81.png)
 
-Bonjour et bienvenue!  
-Je vous presente mon deuxième projet de la formation de développeur Web chez **OpenClassrooms**.
+Deuxième projet de la formation de développeur Web chez **OpenClassrooms**.
 
 # Scénario
 
